@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ass/css/base.css">
+    <link rel="stylesheet" href="./ass/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./ass/font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app">
+        <!-- header-start -->
+        <div class="header">
+            <div class="wrapper">
+                <div class="wrapper-header">
+
+                    <div class="header__logo">
+                        <i class="icon header__icon-menu fa-solid fa-list"></i>
+                        <img src="./ass/img/image 16.png" alt="" class="header__icon-img">
+                    </div>
+                    <div class="header__search">
+                        <i class="icon header__search-icon-search fa-brands fa-searchengin"></i>
+                        <input type="text" name="" id="" class="header__search-input color" placeholder="Search email">
+                        <i class="icon header__search-icon-down fa-sharp fa-solid fa-caret-down"></i>
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">
+                                <i class="icon header__list-icon-question fa-sharp fa-solid fa-question"></i>
+
+                            </a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#" class="header__list-link">
+                                <i class="icon header__list-icon-setting fa-sharp fa-solid fa-gear"></i>
+                            </a>
+                        </li>
+                        <li class="header__list-item header__list-menu-gg">
+                            <i class="icon header__list-icon-menu fa-sharp fa-solid fa-bars"></i>
+                            <div class="header__menu-gg">
+                                <div class="header__menu-gg-item">
+                                    <img src="./ass/img/309386567_2935213300117746_8213680759643128848_n.jpeg" alt=""
+                                        class="header__menu-gg-img">
+                                    <span class="header__menu-gg-text">tai khoan</span>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="header__list-item">
+                            <img src="./ass/img/309386567_2935213300117746_8213680759643128848_n.jpeg" alt=""
+                                class="header__list-img">
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- header-end -->
+        <!-- mainbody-start -->
+        <div class="main-body">
+
+            <!-- sidebar-start -->
+
+            <div class="sidebar">
+                <button class="sidebar__btn">
+                    <span class="material-symbols-outlined sidebar__btn-icon">
+                        add
+                    </span>
+
+                    <h3>Compose</h3>
+                </button>
+                <div class="sidebar__section sidebar__section-active">
+                    <span class="material-symbols-outlined sidebar__section-icon sidebar__section-icon-acitve">
+                        imagesmode
+                    </span>
+                    <h3 class="sidebar__section-header sidebar__section-header-active ">inbox</h3>
+
+                </div>
+                <div class="sidebar__section">
+                    <span class="material-symbols-outlined sidebar__section-icon">
+                        star
+                    </span>
+                    <h3 class="sidebar__section-header">started</h3>
+
+                </div>
+                <div class="sidebar__section">
+                    <span class="material-symbols-outlined sidebar__section-icon">
+                        schedule
+                    </span>
+                    <h3 class="sidebar__section-header">snoozed</h3>
+
+                </div>
+                <div class="sidebar__section">
+                    <span class="material-symbols-outlined sidebar__section-icon">
+                        send
+                    </span>
+                    <h3 class="sidebar__section-header">send</h3>
+
+                </div>
+                <div class="sidebar__section">
+                    <span class="material-symbols-outlined sidebar__section-icon">
+                        draft
+                    </span>
+                    <h3 class="sidebar__section-header">draft</h3>
+
+                </div>
+                <div class="sidebar__section">
+                    <span class="material-symbols-outlined sidebar__section-icon">
+                        error
+                    </span>
+                    <h3 class="sidebar__section-header">spam</h3>
+
+                </div>
+                <div class="sidebar__section">
+                    <span class="material-symbols-outlined sidebar__section-icon">
+                        delete
+                    </span>
+                    <h3 class="sidebar__section-header">trash</h3>
+
+                </div>
+                <div class="sidebar__section">
+                    <span class="material-symbols-outlined sidebar__section-icon">
+                        expand_more
+                    </span>
+                    <h3 class="sidebar__section-header">more</h3>
+
+                </div>
+
+            </div>
+
+            <!-- sidebar-end -->
+
+            <!-- emaillist-start -->
+            <div class="emaillist">
+                <!-- emaillist__setting-start -->
+                <div class="emaillist__setting">
+                    <div class="emaillist__settingeRight">
+                        <input type="checkbox">
+                        <span class="material-symbols-outlined emaillist__settingeRight-icon ">
+                            arrow_drop_down
+                        </span>
+                        <span class="material-symbols-outlined emaillist__settingeRight-icon ">
+                            refresh
+                        </span>
+                        <span class="material-symbols-outlined emaillist__settingeRight-icon ">
+                            more_vert
+                        </span>
+                    </div>
+                    <div class="emaillist__settingeLeft">
+                        <span class="quantity">
+                            <span class="page">1</span>
+                            -
+                            <span class="page">50</span>
+                            <span class="page">trong số</span>
+                            <span class="page">1.089</span>
+                        </span>
+                        <span class="material-symbols-outlined emaillist__settingeLeft-icon">
+                            chevron_right
+                        </span>
+                        <span class="material-symbols-outlined emaillist__settingeLeft-icon">
+                            chevron_left
+                        </span>
+                        <span class="material-symbols-outlined emaillist__settingeLeft-icon ">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                </div>
+                <!-- emaillist__setting-end -->
+
+
+                <!-- emaillist__socialStart -->
+                <div class="emaillist__social">
+                    <div class="emaillist__social-item emaillist__social-item-active">
+                        <span class="material-symbols-outlined emaillist__social-icon">
+                            group
+                        </span>
+                        <h3 class="emaillist__social-header">
+                            primary
+                        </h3>
+                    </div>
+                    <div class="emaillist__social-item">
+                        <span class="material-symbols-outlined emaillist__social-icon">
+                            group
+                        </span>
+                        <div class="wrapemaillist__social-item">
+                            <h3 class="emaillist__social-header">
+                                social
+                                <span class="emaillist__social-new">1 new </span>
+                            </h3>
+                            <span class="emaillist__social-mess">Nextdoor,Message,from</span>
+                        </div>
+                    </div>
+                    <div class="emaillist__social-item">
+                        <span class="material-symbols-outlined emaillist__social-icon">
+                            sell
+                        </span>
+                        <div class="wrapemaillist__social-item">
+                            <h3 class="emaillist__social-header">
+                                Promotions
+                                <span class="emaillist__social-new">6 new </span>
+                            </h3>
+                            <span class="emaillist__social-mess">Lowe's Home Improvement</span>
+                        </div>
+                    </div>
+                    <div class="emaillist__social-item">
+                        <span class="material-symbols-outlined emaillist__social-icon">
+                            error
+                        </span>
+                        <h3 class="emaillist__social-header">
+                            update
+                        </h3>
+                    </div>
+
+
+                </div>
+
+                <!-- emaillist__socialEnd -->
+
+
+                <!-- emaillist__itemStart -->
+                <div class="emaillist__item">
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim.</span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Welcome to startmail
+                                <span class="emaillist__item-desc">- Nulla Lorem mollit cupidatat irure. Laborum magna
+                                    nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt
+                                    reprehenderit elit laborum. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                We missed you last night
+                                <span class="emaillist__item-desc">- Minim mollit non deserunt ullamco est sit aliqua
+                                    dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation
+                                    veniam consequat sunt nostrud amet. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Plans for tonight
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                    <div class="item-email">
+                        <div class="wap__item-email">
+                            <input type="checkbox" class="emaillist__item-input">
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                grade
+                            </span>
+                            <span class="material-symbols-outlined emaillist__item-icon">
+                                label_important
+                            </span>
+                        </div>
+                        <h3 class="emaillist__item-name">harry porter</h3>
+                        <div class="emaillist__item-mess">
+                            <h4 class="emaillist__item-tiltle">
+                                Build prototypes without code
+                                <span class="emaillist__item-desc">- Sunt qui esse pariatur duis deserunt mollit dolore
+                                    cillum minim tempor enim asdsasdsasddasdsasdasdassdassdasdassds. </span>
+                            </h4>
+                        </div>
+                        <h3 class="emaillist__item-time"> 10:41 PM</h3>
+
+
+                    </div>
+                </div>
+                <!-- emaillist__itemEnd -->
+            </div>
+
+            <!-- emaillist-end -->
+        </div>
+        <!-- mainbody-end -->
+
+
+    </div>
+
+
+</body>
+
+</html>
